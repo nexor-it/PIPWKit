@@ -4,8 +4,8 @@
 # PIPWKit
 Picture in Picture **Window** for iOS
 
-![pip_default](https://github.com/nexor-it/PIPWKit/tree/master/Screenshot/default.gif)
-![pip_transition](https://github.com/nexor-it/PIPWKit/tree/master/Screenshot/transition.gif)
+![pip_default](/Screenshot/default.gif)
+![pip_transition](/Screenshot/transition.gif)
 
 ## Ready for
 - Device orientation 
@@ -106,7 +106,7 @@ PIPWKit.dismiss(animated: true)
 
 #### Update PIPSize
 
-![pip_resize](https://github.com/nexor-it/PIPWKit/tree/master/Screenshot/resize.gif)
+![pip_resize](/Screenshot/resize.gif)
 
 ```swift
 class PIPViewController: UIViewController, PIPWUsable {
