@@ -27,44 +27,44 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="PipWindow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="PIPWKitExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-2j-aaJ">
-                                <rect key="frame" x="128.5" y="353" width="157" height="190"/>
+                                <rect key="frame" x="115" y="353" width="184" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Z-dU-C6p">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="30"/>
-                                        <state key="normal" title="PIP Show"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
+                                        <state key="normal" title="PIPViewController"/>
                                         <connections>
                                             <action selector="pipShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvW-mn-T0f"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fb-9P-44B" userLabel="Another PIP Show">
+                                        <rect key="frame" x="0.0" y="40" width="184" height="30"/>
+                                        <state key="normal" title="PIPViewController with XIB"/>
+                                        <connections>
+                                            <action selector="pipAnotherShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSl-nX-lNo"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-dW-rAN">
-                                        <rect key="frame" x="0.0" y="40" width="157" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="184" height="30"/>
                                         <state key="normal" title="PIP Dismiss"/>
                                         <connections>
                                             <action selector="pipDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8e-GN-Fm4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fb-9P-44B" userLabel="Another PIP Show">
-                                        <rect key="frame" x="0.0" y="80" width="157" height="30"/>
-                                        <state key="normal" title="Another PIP Show"/>
-                                        <connections>
-                                            <action selector="pipAnotherShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSl-nX-lNo"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vG2-om-PYX">
-                                        <rect key="frame" x="0.0" y="120" width="157" height="30"/>
+                                        <rect key="frame" x="0.0" y="120" width="184" height="30"/>
                                         <state key="normal" title="Show view controller"/>
                                         <connections>
                                             <action selector="showViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNb-uf-sV0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-FN-1fK">
-                                        <rect key="frame" x="0.0" y="160" width="157" height="30"/>
+                                        <rect key="frame" x="0.0" y="160" width="184" height="30"/>
                                         <state key="normal" title="Present view controller"/>
                                         <connections>
                                             <action selector="presentViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XV-Cm-akV"/>
@@ -89,7 +89,7 @@
         <!--Xib View Controller-->
         <scene sceneID="kMe-Fj-FQD">
             <objects>
-                <viewController storyboardIdentifier="PIPXibViewController" id="7HT-rF-NOE" customClass="PIPXibViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PIPXibViewController" id="7HT-rF-NOE" customClass="PIPXibViewController" customModule="PIPWKitExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5aC-0s-xNf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
