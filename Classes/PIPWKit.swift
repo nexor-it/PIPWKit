@@ -44,8 +44,8 @@ open class PIPWKit {
 
     static internal var state: _PIPWState = .none
     
-    class func show(with viewController: UIViewController, completion: (() -> Void)? = nil) {
-        guard let window = UIApplication.shared.keyWindow else {
+    class func show(with viewController: UIViewController, mainWindow: UIWindow? = nil, completion: (() -> Void)? = nil) {
+        guard let window = mainWindow ?? UIApplication.shared.keyWindow else {
             return
         }
         

@@ -4,12 +4,17 @@
 # PIPWKit
 Picture in Picture Window for iOS
 
+![pip_default](/Screenshot/default.gif)
+![pip_transition](/Screenshot/transition.gif)
+
 ## Ready for
 - Device orientation 
 - iOS11+ with iOS13 modal style support
 - Swift 5.x
 - XCode 11.5
 - Over modal context
+
+*If your project is IOS13+, you must to set the mainWindow parameter in the show function*
 
 ## Installation
 
@@ -46,7 +51,7 @@ open class PIPWKit {
     static var floatingWindow: PIPWViewWindow?
     static var mainWindow: UIWindow?
 
-    class func show(with viewController: UIViewController, completion: (() -> Void)? = nil) { ... }
+    class func show(with viewController: UIViewController, mainWindow: UIWindow? = nil, completion: (() -> Void)? = nil) { ... }
     class func dismiss(animated: Bool, completion: (() -> Void)? = nil) { ... }
 }
 ```
