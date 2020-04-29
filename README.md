@@ -137,7 +137,7 @@ class PIPViewController: UIViewController, PIPWUsable {
 
 ## Authors
 
-**PIPWKit** is made with love by Daniele Galiotto ([gali8](https://github.com/gali8)), CIO at [Nexor Technology] (https://www.nexor.it)
+**PIPWKit** is made with love by Daniele Galiotto ([gali8](https://github.com/gali8)), CIO at [Nexor Technology](https://www.nexor.it)
 
 **PIPWKit** is inspired to PIPKit.
 PIPKit is by Taeun Kim (kofktu), <https://github.com/Kofktu/PIPKit>
