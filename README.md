@@ -1,11 +1,11 @@
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![CocoaPods](http://img.shields.io/cocoapods/v/PIPWKit.svg?style=flat)](http://cocoapods.org/?q=name%3APIPKit%20author%3AKofktu)
+[![CocoaPods](http://img.shields.io/cocoapods/v/PIPWKit.svg?style=flat)](https://cocoapods.org/pods/PIPKit)
 
 # PIPWKit
 Picture in Picture **Window** for iOS
 
-![pip_default](/Screenshot/default.gif)
-![pip_transition](/Screenshot/transition.gif)
+![pip_default](https://github.com/nexor-it/PIPWKit/tree/master/Screenshot/default.gif)
+![pip_transition](https://github.com/nexor-it/PIPWKit/tree/master/Screenshot/transition.gif)
 
 ## Ready for
 - Device orientation 
@@ -106,7 +106,7 @@ PIPWKit.dismiss(animated: true)
 
 #### Update PIPSize
 
-![pip_resize](/Screenshot/resize.gif)
+![pip_resize](https://github.com/nexor-it/PIPWKit/tree/master/Screenshot/resize.gif)
 
 ```swift
 class PIPViewController: UIViewController, PIPWUsable {
