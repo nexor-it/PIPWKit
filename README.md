@@ -19,7 +19,7 @@ Picture in Picture **Window** for iOS
 ## Installation
 
 #### CocoaPods
-PIPKit is available through [CocoaPods](http://cocoapods.org). To install
+PIPWKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -40,7 +40,7 @@ protocol PIPWUsable {
 
 ```
 
-#### PIPKit
+#### PIPWKit
 
 ```swift
 open class PIPWKit {
