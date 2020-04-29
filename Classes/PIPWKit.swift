@@ -59,7 +59,7 @@ open class PIPWKit {
         self.mainWindow = window
                                 
         self.floatingWindow = PIPWViewWindow()
-        self.floatingWindow?.backgroundColor = .black
+        self.floatingWindow?.backgroundColor = .clear
         self.floatingWindow?.rootViewController = viewController
         self.floatingWindow?.windowLevel = UIWindow.Level(rawValue: 1)
         self.floatingWindow?.makeKeyAndVisible()

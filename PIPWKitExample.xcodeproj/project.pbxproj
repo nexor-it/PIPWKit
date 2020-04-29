@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646AFE92245965B40094CC94 /* PIPWUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AFE8F245965B40094CC94 /* PIPWUsable.swift */; };
+		646AFE93245965B40094CC94 /* PIPWKitEventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AFE90245965B40094CC94 /* PIPWKitEventDispatcher.swift */; };
+		646AFE94245965B40094CC94 /* PIPWKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AFE91245965B40094CC94 /* PIPWKit.swift */; };
 		648CA4EE2458CC230093A020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648CA4ED2458CC230093A020 /* AppDelegate.swift */; };
 		648CA4F22458CC230093A020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648CA4F12458CC230093A020 /* ViewController.swift */; };
 		648CA4F52458CC230093A020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648CA4F32458CC230093A020 /* Main.storyboard */; };
 		648CA4F72458CC250093A020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648CA4F62458CC250093A020 /* Assets.xcassets */; };
 		648CA4FA2458CC250093A020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648CA4F82458CC250093A020 /* LaunchScreen.storyboard */; };
-		648CA5052458CC6F0093A020 /* PIPWKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648CA5022458CC6F0093A020 /* PIPWKit.swift */; };
-		648CA5062458CC6F0093A020 /* PIPWUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648CA5032458CC6F0093A020 /* PIPWUsable.swift */; };
-		648CA5072458CC6F0093A020 /* PIPWKitEventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648CA5042458CC6F0093A020 /* PIPWKitEventDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		648CA4EA2458CC230093A020 /* PipWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PipWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		646AFE8F245965B40094CC94 /* PIPWUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPWUsable.swift; sourceTree = "<group>"; };
+		646AFE90245965B40094CC94 /* PIPWKitEventDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPWKitEventDispatcher.swift; sourceTree = "<group>"; };
+		646AFE91245965B40094CC94 /* PIPWKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPWKit.swift; sourceTree = "<group>"; };
+		648CA4EA2458CC230093A020 /* PIPWKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIPWKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		648CA4ED2458CC230093A020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		648CA4F12458CC230093A020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		648CA4F42458CC230093A020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		648CA4F62458CC250093A020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		648CA4F92458CC250093A020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		648CA4FB2458CC250093A020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		648CA5022458CC6F0093A020 /* PIPWKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPWKit.swift; sourceTree = "<group>"; };
-		648CA5032458CC6F0093A020 /* PIPWUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPWUsable.swift; sourceTree = "<group>"; };
-		648CA5042458CC6F0093A020 /* PIPWKitEventDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPWKitEventDispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +41,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646AFE8E245965B40094CC94 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				646AFE8F245965B40094CC94 /* PIPWUsable.swift */,
+				646AFE90245965B40094CC94 /* PIPWKitEventDispatcher.swift */,
+				646AFE91245965B40094CC94 /* PIPWKit.swift */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
 		648CA4E12458CC230093A020 = {
 			isa = PBXGroup;
 			children = (
-				648CA4EC2458CC230093A020 /* PipWindow */,
+				648CA4EC2458CC230093A020 /* PIPWKitExample */,
 				648CA4EB2458CC230093A020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,15 +62,15 @@
 		648CA4EB2458CC230093A020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				648CA4EA2458CC230093A020 /* PipWindow.app */,
+				648CA4EA2458CC230093A020 /* PIPWKitExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		648CA4EC2458CC230093A020 /* PipWindow */ = {
+		648CA4EC2458CC230093A020 /* PIPWKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				648CA5012458CC330093A020 /* Classes */,
+				646AFE8E245965B40094CC94 /* Classes */,
 				648CA4ED2458CC230093A020 /* AppDelegate.swift */,
 				648CA4F12458CC230093A020 /* ViewController.swift */,
 				648CA4F32458CC230093A020 /* Main.storyboard */,
@@ -68,25 +78,15 @@
 				648CA4F82458CC250093A020 /* LaunchScreen.storyboard */,
 				648CA4FB2458CC250093A020 /* Info.plist */,
 			);
-			path = PipWindow;
-			sourceTree = "<group>";
-		};
-		648CA5012458CC330093A020 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				648CA5022458CC6F0093A020 /* PIPWKit.swift */,
-				648CA5042458CC6F0093A020 /* PIPWKitEventDispatcher.swift */,
-				648CA5032458CC6F0093A020 /* PIPWUsable.swift */,
-			);
-			path = Classes;
+			path = PIPWKitExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		648CA4E92458CC230093A020 /* PipWindow */ = {
+		648CA4E92458CC230093A020 /* PIPWKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 648CA4FE2458CC250093A020 /* Build configuration list for PBXNativeTarget "PipWindow" */;
+			buildConfigurationList = 648CA4FE2458CC250093A020 /* Build configuration list for PBXNativeTarget "PIPWKitExample" */;
 			buildPhases = (
 				648CA4E62458CC230093A020 /* Sources */,
 				648CA4E72458CC230093A020 /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = PipWindow;
+			name = PIPWKitExample;
 			productName = PipWindow;
-			productReference = 648CA4EA2458CC230093A020 /* PipWindow.app */;
+			productReference = 648CA4EA2458CC230093A020 /* PIPWKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 648CA4E52458CC230093A020 /* Build configuration list for PBXProject "PipWindow" */;
+			buildConfigurationList = 648CA4E52458CC230093A020 /* Build configuration list for PBXProject "PIPWKitExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				648CA4E92458CC230093A020 /* PipWindow */,
+				648CA4E92458CC230093A020 /* PIPWKitExample */,
 			);
 		};
 /* End PBXProject section */
@@ -152,11 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648CA5072458CC6F0093A020 /* PIPWKitEventDispatcher.swift in Sources */,
-				648CA5052458CC6F0093A020 /* PIPWKit.swift in Sources */,
+				646AFE93245965B40094CC94 /* PIPWKitEventDispatcher.swift in Sources */,
+				646AFE92245965B40094CC94 /* PIPWUsable.swift in Sources */,
+				646AFE94245965B40094CC94 /* PIPWKit.swift in Sources */,
 				648CA4F22458CC230093A020 /* ViewController.swift in Sources */,
 				648CA4EE2458CC230093A020 /* AppDelegate.swift in Sources */,
-				648CA5062458CC6F0093A020 /* PIPWUsable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,13 +302,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B629US47XJ;
-				INFOPLIST_FILE = PipWindow/Info.plist;
+				INFOPLIST_FILE = PIPWKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.nexor.PipWindow;
+				PRODUCT_BUNDLE_IDENTIFIER = it.nexor.PIPWKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,13 +321,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B629US47XJ;
-				INFOPLIST_FILE = PipWindow/Info.plist;
+				INFOPLIST_FILE = PIPWKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.nexor.PipWindow;
+				PRODUCT_BUNDLE_IDENTIFIER = it.nexor.PIPWKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		648CA4E52458CC230093A020 /* Build configuration list for PBXProject "PipWindow" */ = {
+		648CA4E52458CC230093A020 /* Build configuration list for PBXProject "PIPWKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				648CA4FC2458CC250093A020 /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		648CA4FE2458CC250093A020 /* Build configuration list for PBXNativeTarget "PipWindow" */ = {
+		648CA4FE2458CC250093A020 /* Build configuration list for PBXNativeTarget "PIPWKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				648CA4FF2458CC250093A020 /* Debug */,

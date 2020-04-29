@@ -63,32 +63,6 @@ class ViewController: UIViewController {
     }
 }
 
-//class PIPMyWindow: PIPWindow {
-//
-//    var initialState: PIPState { return .pip }
-//    var pipSize: CGSize { return CGSize(width: 200.0, height: 200.0) }
-//
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        super.touchesEnded(touches, with: event)
-//
-//        if self.isPIP {
-//            stopPIPMode()
-//        } else {
-//            startPIPMode()
-//        }
-//    }
-//
-//    func didChangedState(_ state: PIPState) {
-//        switch state {
-//        case .pip:
-//            print("PIPViewController.pip")
-//        case .full:
-//            print("PIPViewController.full")
-//        }
-//    }
-//
-//}
-
 class PIPViewController: UIViewController, PIPWUsable {
     
     var initialState: PIPWState { return .pip }
