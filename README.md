@@ -2,7 +2,7 @@
 [![CocoaPods](http://img.shields.io/cocoapods/v/PIPWKit.svg?style=flat)](http://cocoapods.org/?q=name%3APIPKit%20author%3AKofktu)
 
 # PIPWKit
-Picture in Picture Window for iOS
+Picture in Picture **Window** for iOS
 
 ![pip_default](/Screenshot/default.gif)
 ![pip_transition](/Screenshot/transition.gif)
