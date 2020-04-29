@@ -14,7 +14,7 @@ Picture in Picture **Window** for iOS
 - XCode 11.5
 - Over modal context
 
-*If your project is IOS13+, you must to set the mainWindow parameter in the show function*
+*If your project is IOS13+, you must set the mainWindow parameter in the show function*
 
 ## Installation
 
