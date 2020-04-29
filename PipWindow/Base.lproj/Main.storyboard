@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mi8-XJ-s2g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="koy-SM-Mbe">
+            <objects>
+                <navigationController id="Mi8-XJ-s2g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fdx-hZ-9BY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AbD-oZ-oJU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jG-nQ-dMD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="PipWindow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-2j-aaJ">
+                                <rect key="frame" x="128.5" y="353" width="157" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Z-dU-C6p">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="30"/>
+                                        <state key="normal" title="PIP Show"/>
+                                        <connections>
+                                            <action selector="pipShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvW-mn-T0f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-dW-rAN">
+                                        <rect key="frame" x="0.0" y="40" width="157" height="30"/>
+                                        <state key="normal" title="PIP Dismiss"/>
+                                        <connections>
+                                            <action selector="pipDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8e-GN-Fm4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fb-9P-44B" userLabel="Another PIP Show">
+                                        <rect key="frame" x="0.0" y="80" width="157" height="30"/>
+                                        <state key="normal" title="Another PIP Show"/>
+                                        <connections>
+                                            <action selector="pipAnotherShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSl-nX-lNo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vG2-om-PYX">
+                                        <rect key="frame" x="0.0" y="120" width="157" height="30"/>
+                                        <state key="normal" title="Show view controller"/>
+                                        <connections>
+                                            <action selector="showViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNb-uf-sV0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-FN-1fK">
+                                        <rect key="frame" x="0.0" y="160" width="157" height="30"/>
+                                        <state key="normal" title="Present view controller"/>
+                                        <connections>
+                                            <action selector="presentViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XV-Cm-akV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EC2-2j-aaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mM4-je-qvm"/>
+                            <constraint firstItem="EC2-2j-aaJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ve2-3Z-9uU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KPy-TR-J7e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Xib View Controller-->
+        <scene sceneID="kMe-Fj-FQD">
+            <objects>
+                <viewController storyboardIdentifier="PIPXibViewController" id="7HT-rF-NOE" customClass="PIPXibViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5aC-0s-xNf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-2F-86h">
+                                <rect key="frame" x="166" y="398" width="82" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZO-2N-qpv">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="30"/>
+                                        <state key="normal" title="Full And PIP"/>
+                                        <connections>
+                                            <action selector="onFullAndPIP:" destination="7HT-rF-NOE" eventType="touchUpInside" id="7lE-7X-jfc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-5b-7nZ">
+                                        <rect key="frame" x="0.0" y="40" width="82" height="30"/>
+                                        <state key="normal" title="PIP Size"/>
+                                        <connections>
+                                            <action selector="onUpdatePIPSize:" destination="7HT-rF-NOE" eventType="touchUpInside" id="cmd-Zp-nuB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKW-Qs-9II">
+                                        <rect key="frame" x="0.0" y="80" width="82" height="30"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="onDismiss:" destination="7HT-rF-NOE" eventType="touchUpInside" id="Ksp-zt-F41"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96170979739999995" green="0.70866668219999995" blue="0.13854117690000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="5O1-2F-86h" firstAttribute="centerX" secondItem="IRt-Ia-72o" secondAttribute="centerX" id="4Pk-RQ-pfA"/>
+                            <constraint firstItem="5O1-2F-86h" firstAttribute="centerY" secondItem="IRt-Ia-72o" secondAttribute="centerY" id="twp-CT-0uH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IRt-Ia-72o"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kke-hw-g0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="134"/>
+        </scene>
+    </scenes>
+</document>
