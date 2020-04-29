@@ -1,5 +1,5 @@
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![CocoaPods](http://img.shields.io/cocoapods/v/PIPWKit.svg?style=flat)](https://cocoapods.org/pods/PIPKit)
+[![CocoaPods](http://img.shields.io/cocoapods/v/PIPWKit.svg?style=flat)](https://cocoapods.org/pods/PIPWKit)
 
 # PIPWKit
 Picture in Picture **Window** for iOS
