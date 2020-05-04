@@ -9,21 +9,21 @@
 import Foundation
 import UIKit
 
-protocol PIPWUsable {
+public protocol PIPWUsable {
     var initialState: PIPWState { get }
     var initialPosition: PIPWPosition { get }
     var pipSize: CGSize { get }
     func didChangedState(_ state: PIPWState)
 }
 
-extension PIPWUsable {
+public extension PIPWUsable {
     var initialState: PIPWState { return .pip }
     var initialPosition: PIPWPosition { return .bottomRight }
     var pipSize: CGSize { return CGSize(width: 200.0, height: (200.0 * 9.0) / 16.0) }
     func didChangedState(_ state: PIPWState) {}
 }
 
-extension PIPWUsable where Self: PIPWViewWindow {
+public extension PIPWUsable where Self: PIPWViewWindow {
     func setNeedUpdatePIPSize() {
         guard PIPWKit.isPIP else {
             return

@@ -36,15 +36,15 @@ open class PIPWViewWindow: UIWindow, PIPWUsable {
 
 open class PIPWKit {
     
-    static var isActive: Bool { return floatingWindow != nil }
-    static var isPIP: Bool { return state == .pip }
+    public static var isActive: Bool { return floatingWindow != nil }
+    public static var isPIP: Bool { return state == .pip }
 
-    static var floatingWindow: PIPWViewWindow?
-    static var mainWindow: UIWindow?
+    public static var floatingWindow: PIPWViewWindow?
+    public static var mainWindow: UIWindow?
 
-    static internal var state: _PIPWState = .none
+    internal static var state: _PIPWState = .none
     
-    class func show(with viewController: UIViewController, mainWindow: UIWindow? = nil, completion: (() -> Void)? = nil) {
+    open class func show(with viewController: UIViewController, mainWindow: UIWindow? = nil, completion: (() -> Void)? = nil) {
         guard let window = mainWindow ?? UIApplication.shared.keyWindow else {
             return
         }
@@ -76,7 +76,7 @@ open class PIPWKit {
         }
     }
     
-    class func dismiss(animated: Bool, completion: (() -> Void)? = nil) {
+    open class func dismiss(animated: Bool, completion: (() -> Void)? = nil) {
         state = .exit
         self.floatingWindow?.pipDismiss(animated: animated, completion: {
             PIPWKit.reset()
@@ -85,7 +85,7 @@ open class PIPWKit {
     }
     
     // MARK: - Internal
-    class func startPIPMode() {
+    open class func startPIPMode() {
         guard let floatingWindow = self.floatingWindow else {
             return
         }
@@ -95,7 +95,7 @@ open class PIPWKit {
         floatingWindow.pipEventDispatcher?.enterPIP()
     }
     
-    class func stopPIPMode() {
+    open class func stopPIPMode() {
         guard let floatingWindow = self.floatingWindow else {
             return
         }

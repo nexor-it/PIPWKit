@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class PIPWKitEventDispatcher {
+open class PIPWKitEventDispatcher {
     
     private enum Consts {
         static let hangAroundPadding: CGFloat = 15.0
@@ -19,7 +19,7 @@ final class PIPWKitEventDispatcher {
         UIPanGestureRecognizer(target: self, action: #selector(onTransition(_:)))
     }()
     
-    var pipPosition: PIPWPosition = .bottomRight
+    open var pipPosition: PIPWPosition = .bottomRight
     private var startOffset: CGPoint = .zero
     private var deviceNotificationObserver: NSObjectProtocol?
     
@@ -29,7 +29,7 @@ final class PIPWKitEventDispatcher {
         }
     }
     
-    init(rootWindow: PIPWKitWindow) {
+     init(rootWindow: PIPWKitWindow) {
         self.rootWindow = rootWindow
         self.pipPosition = rootWindow.initialPosition
         
@@ -44,7 +44,7 @@ final class PIPWKitEventDispatcher {
         }
     }
     
-    func enterFullScreen() {
+    open func enterFullScreen() {
         UIView.animate(withDuration: 0.25, animations: { [weak self] in
             self?.updateFrame()
         }) { [weak self] (_) in
@@ -52,7 +52,7 @@ final class PIPWKitEventDispatcher {
         }
     }
 
-    func enterPIP() {
+    open func enterPIP() {
         UIView.animate(withDuration: 0.25, animations: { [weak self] in
             self?.updateFrame()
         }) { [weak self] (_) in
@@ -60,7 +60,7 @@ final class PIPWKitEventDispatcher {
         }
     }
     
-    func updateFrame() {
+    open func updateFrame() {
         guard let mainWindow = PIPWKit.mainWindow,
             let rootWindow = rootWindow else {
                 return
