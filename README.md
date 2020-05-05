@@ -34,8 +34,12 @@ pod 'PIPWKit'
 protocol PIPWUsable {
     var initialState: PIPWState { get }
     var initialPosition: PIPWPosition { get }
+    var pipEdgeInsets: UIEdgeInsets { get }
     var pipSize: CGSize { get }
+    var pipShadow: PIPWShadow? { get }
+    var pipCorner: PIPWCorner? { get }
     func didChangedState(_ state: PIPWState)
+    func didChangePosition(_ position: PIPWPosition)
 }
 
 ```
@@ -132,6 +136,7 @@ class PIPViewController: UIViewController, PIPWUsable {
     }
 
     func didChangedState(_ state: PIPWState) {}
+    func didChangePosition(_ position: PIPWPosition) {}
 }
 ```
 
