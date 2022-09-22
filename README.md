@@ -26,6 +26,12 @@ it, simply add the following line to your Podfile:
 pod 'PIPWKit'
 ```
 
+#### Swifti Package Manager
+
+```ruby
+[PIPWKit](https://github.com/nexor-it/PIPWKit/)
+```
+
 ## Usage
 
 #### PIPUsable
