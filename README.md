@@ -10,8 +10,8 @@ Picture in Picture **Window** for iOS
 ## Ready for
 - Device orientation 
 - iOS11+ with iOS13 modal style support
-- Swift 5.x
-- XCode 11.5
+- Swift 5.x+
+- XCode 11.5+
 - Over modal context
 
 *If your project is IOS13+, you must set the mainWindow parameter in the show function*
